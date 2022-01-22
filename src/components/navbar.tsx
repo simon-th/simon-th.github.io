@@ -7,7 +7,7 @@ const defaultLinks: NavBarLinkProps[] = [
   { label: 'Projects', url: '/projects' },
 ];
 
-const navbarHoverStyle = 'hover:bg-highlight hover:scale-105';
+const navbarHoverStyle = 'hover:bg-highlight md:hover:scale-105';
 const navbarBaseStyle =
   'block text-sm font-semibold px-3 py-2 rounded-md transition ease-in-out';
 
@@ -125,7 +125,7 @@ function MenuBar() {
 export default function Navbar() {
   const [menuButtonClicked, setMenuButtonClicked] = React.useState(false);
   return (
-    <nav className="bg-dark-navy sm:bg-transparent sm:bg-gradient-to-b sm:from-dark-navy text-white fixed sm:h-36 w-full top-0 z-10">
+    <nav className="bg-dark-navy sm:bg-transparent sm:bg-gradient-to-b sm:from-dark-navy text-white fixed sm:h-36 w-full top-0 z-50">
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           <MobileMenuButton
