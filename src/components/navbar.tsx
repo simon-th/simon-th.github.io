@@ -7,7 +7,7 @@ const defaultLinks: NavBarLinkProps[] = [
   { label: 'Projects', url: '/projects' },
 ];
 
-const navbarHoverStyle = 'hover:bg-highlight hover:scale-1';
+const navbarHoverStyle = 'hover:bg-highlight hover:scale-105';
 const navbarBaseStyle =
   'block text-sm font-semibold px-3 py-2 rounded-md transition ease-in-out';
 
@@ -105,7 +105,7 @@ function MobileMenu(props: VisibilityProps) {
 function NavBrand() {
   return (
     <div className="flex-shrink-0 flex items-center">
-      <h1 className="text-xl font-bold">
+      <h1 className="text-xl font-bold hover:scale-105 transition ease-in-out">
         <Link to="/">Simon Hoque</Link>
       </h1>
     </div>

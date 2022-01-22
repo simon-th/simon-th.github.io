@@ -8,9 +8,9 @@ type LayoutProps = {
 };
 
 const iconClass =
-  'w-6 h-6 stroke-slate-500 fill-none stroke-1.5 hover:stroke-white hover:scale-110';
+  'w-6 h-6 stroke-slate-500 fill-none stroke-1.5 hover:stroke-white hover:scale-110 transition ease-in-out';
 const sideBarClass =
-  'w-full flex flex-row md:flex-col justify-center md:pb-0 md:w-fit transition ease-in-out';
+  'w-full flex flex-row md:flex-col justify-center md:pb-0 md:w-fit';
 
 export default function Layout({ children }: LayoutProps) {
   return (
@@ -61,7 +61,7 @@ export default function Layout({ children }: LayoutProps) {
         </div>
         <div className={`${sideBarClass} md:rotate-text`}>
           <a href="mailto:simon.thoque@gmail.com">
-            <p className="text-sm text-slate-500 tracking-widest hover:scale-105 hover:text-white">
+            <p className="text-sm text-slate-500 tracking-widest transition ease-in-out hover:scale-105 hover:text-white">
               simon.thoque@gmail.com
             </p>
           </a>

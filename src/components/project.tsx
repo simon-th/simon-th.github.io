@@ -25,12 +25,14 @@ export default function Project(props: ProjectProps) {
   const [showDetails, setShowDetails] = React.useState(false);
   const header = <div>{title}</div>;
   const body = (
-    <button
-      type="button"
-      className="text-left transition ease-in-out hover:text-white hover:translate-y-1"
-      onClick={() => setShowDetails(!showDetails)}
-    >
-      {description}
+    <div>
+      <button
+        type="button"
+        className="text-left transition ease-in-out hover:text-white hover:translate-y-1"
+        onClick={() => setShowDetails(!showDetails)}
+      >
+        {description}
+      </button>
       <CSSTransition
         in={showDetails}
         timeout={0}
@@ -41,9 +43,10 @@ export default function Project(props: ProjectProps) {
           {createListItemsFromStringArray(details, `${p} mb-3`)}
         </ul>
       </CSSTransition>
-    </button>
+    </div>
   );
-  const iconClass = 'w-6 h-6 stroke-white fill-none stroke-1.5 hover:scale-110';
+  const iconClass =
+    'w-6 h-6 stroke-white fill-none stroke-1.5 hover:scale-110 transition ease-in-out';
   const footer = (
     <div className="w-full flex justify-between">
       <div className="flex flex-wrap h-fit gap-3">
@@ -62,7 +65,7 @@ export default function Project(props: ProjectProps) {
           />
         ))}
       </div>
-      <div className="pl-6 flex gap-4 transition ease-in-out">
+      <div className="pl-6 flex gap-4">
         {docs ? (
           <a href={docs} className={iconClass}>
             <Documentation />

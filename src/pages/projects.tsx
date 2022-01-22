@@ -12,7 +12,7 @@ export default function ProjectsPage() {
         <title>Projects - Simon Hoque</title>
       </Helmet>
       <h1 className={`${h1}`}>Projects</h1>
-      <p className="text-sm text-slate-700">
+      <p className="text-sm text-slate-700 mb-5">
         Click on description to learn more.
       </p>
       <ul>
