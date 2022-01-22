@@ -12,6 +12,9 @@ export default function ProjectsPage() {
         <title>Projects - Simon Hoque</title>
       </Helmet>
       <h1 className={`${h1}`}>Projects</h1>
+      <p className="text-sm text-slate-700">
+        Click on description to learn more.
+      </p>
       <ul>
         {ProjectInfo.map((project: ProjectProps) => (
           <li className={listBorder}>
