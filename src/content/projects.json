@@ -1,13 +1,28 @@
 [
   {
-    "title": "Personal Website",
-    "description": "First iteration of my personal website, created it to showcase my work and learn more about frontend technologies.",
+    "title": "Personal Website V2",
+    "description": "Second iteration of my personal website",
     "languages": ["TypeScript"],
-    "technologies": ["React"],
-    "details": ["Details coming soon!"],
+    "technologies": ["React", "Gatsby", "Tailwind CSS"],
+    "details": [
+      "Created it to redesign my original website and learn about different React frameworks and CSS libraries."
+    ],
     "links": {
-      "gitHub": "https://www.github.com/simon-th/simon-th.github.io",
-      "demo": "https://simon-th.github.io"
+      "gitHub": "https://www.github.com/simon-th/v2",
+      "demo": "https://simon-th.github.io/v2"
+    }
+  },
+  {
+    "title": "Personal Website",
+    "description": "First iteration of my personal website",
+    "languages": ["TypeScript"],
+    "technologies": ["React", "Create React App", "Bootstrap"],
+    "details": [
+      "Created it to showcase my work and learn more about frontend technologies."
+    ],
+    "links": {
+      "gitHub": "https://www.github.com/simon-th/v1",
+      "demo": "https://simon-th.github.io/v1"
     }
   },
   {
@@ -62,7 +77,9 @@
     "technologies": ["OpenAI Gym"],
     "details": ["Details coming soon!"],
     "links": {
-      "gitHub": "https://github.com/simon-th/dsl-final-project"
+      "gitHub": "https://github.com/simon-th/dsl-final-project",
+      "demo": "https://www.youtube.com/watch?v=Wk5OFuQpBeU",
+      "docs": "https://anissa321.medium.com/slime-vs-me-myself-i-feaa81d6d099"
     }
   },
   {
@@ -77,6 +94,20 @@
     "links": {
       "gitHub": "https://github.com/simon-th/spotify-data-project",
       "docs": "https://github.com/simon-th/spotify-data-project/blob/master/README.md"
+    }
+  },
+  {
+    "title": "Test Subject Arena",
+    "description": "2D platform game on a microcontroller",
+    "languages": ["C", "ARM Assembly"],
+    "technologies": [],
+    "details": [
+      "Designed and created a 2D platform game on a TI LaunchPad microcontroller which placed 3rd in the class competition",
+      "Built game engine including working physics, double buffered graphics and real-time multiplayer in C and ARM Assembly"
+    ],
+    "links": {
+      "gitHub": "https://github.com/simon-th/test-subject-arena",
+      "demo": "https://www.youtube.com/watch?v=Kn4wtMJl7bU"
     }
   }
 ]
