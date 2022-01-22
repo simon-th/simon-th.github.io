@@ -3,6 +3,6 @@ module.exports = {
     siteUrl: 'https://www.yourdomain.tld',
     title: 'Gatsby Starter',
   },
-  plugins: [`gatsby-plugin-postcss`],
+  plugins: [`gatsby-plugin-postcss`, `gatsby-plugin-react-helmet`],
   pathPrefix: '/v2',
 };

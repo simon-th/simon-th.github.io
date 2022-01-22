@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Navbar from './navbar';
 import { GitHub, Spotify, LinkedIn, Instagram } from './icons';
 
@@ -14,6 +15,15 @@ const sideBarClass =
 export default function Layout({ children }: LayoutProps) {
   return (
     <main className="min-h-screen bg-dark-navy text-white">
+      <Helmet>
+        <title>Simon Hoque</title>
+        <meta name="description" content="Simon Hoque personal website" />
+        <meta
+          name="keywords"
+          content="computer, software, engineer, developer, backend, frontend, data science, machine learning"
+        />
+        <meta name="author" content="Simon Hoque" />
+      </Helmet>
       <Navbar />
       <div className="container mx-auto py-28 sm:py-36 xl:py-48 xl:pb-auto">
         {children}

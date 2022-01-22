@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Layout from '../components/layout';
 import Position, { PositionJSONProps } from '../components/position';
 import Skills from '../components/skills';
@@ -41,6 +42,9 @@ function getSkills(): JSX.Element {
 export default function ExperiencePage() {
   return (
     <Layout>
+      <Helmet>
+        <title>Experience - Simon Hoque</title>
+      </Helmet>
       <h1 className={`${h1}`}>Background</h1>
       {createParagraphsFromStringArray(ExperienceInfo.background)}
       <h1 className={`${h1} mt-12`}>Current Position</h1>
