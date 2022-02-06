@@ -21,7 +21,7 @@ export default function WelcomeIntro() {
         <span>
           <a
             className={linkHoverEffect}
-            href="https://simon-th.github.io/photo"
+            href="https://www.instagram.com/_simonhoque"
           >
             photography
           </a>
@@ -31,7 +31,7 @@ export default function WelcomeIntro() {
         <span>
           <a
             className={linkHoverEffect}
-            href="https://simon-th.github.io/travel"
+            href="https://simon-th-travel.netlify.app"
           >
             traveling
           </a>
